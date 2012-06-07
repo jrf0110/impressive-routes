@@ -15,7 +15,7 @@ impressiveRoutes.exit('slide-1', function(slide, event){
 // I'd probably setup a shortcut first actually
 var routes = impressiveRoutes;
 routes.enter('slide-2', function(slide, event){
-  console
+  console.log("Enter slide 2");
 });
 ```
 
