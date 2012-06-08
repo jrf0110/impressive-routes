@@ -19,5 +19,18 @@ routes.enter('slide-2', function(slide, event){
 });
 ```
 
+##One more thing
+
+Corresponding Enter and Exit routes share the same scope.
+
+```javascript
+routes.enter('slide-3', function(){
+	this.hi = "Mom!";
+});
+routes.exit('slide-3', function(){
+	console.log("Hi, " + this.hi); // "Hi, Mom!"
+});
+```
+
 ##That's it. Pretty simple.
 
